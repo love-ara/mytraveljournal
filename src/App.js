@@ -1,11 +1,11 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Index from "./components/index"
+import Home from "./components/Home"
 function App() {
   return (
       <BrowserRouter>
           <Routes>
               <Route>
-                  <Route element={<Index/>} path={"/go"}/>
+                  <Route element={<Home/>} path={"/go"}/>
               </Route>
           </Routes>
 
