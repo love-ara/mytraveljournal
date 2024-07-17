@@ -14,7 +14,6 @@ body{
     background: #f55a5a;
     width: 100%;
     padding: 10px 26px;
-    /*box-shadow: 0px 2.9825px 7.5px rgba(0,0,0,0.1);*/
 }
 .logo{
     max-width: 100px;
@@ -28,65 +27,107 @@ body{
 }
 .section{
     display: flex;
-    /*gap: 10px;*/
-    padding: 10px 0 0 35px;
+    padding: 10px 0 0 25px;
 }
 .location_side{
     flex: 1;
     display: flex;
-    /*margin-top: 40px;*/
-    padding: 35px 20px;
+    padding: 15px 20px;
     gap: 5px;
-    /*width: 350px;*/
 }
 .location_icon{
     color: #f55a5a;
-    /*max-width: 13px;*/
     max-height: 12px;
-    /*margin-left: -30px;*/
     margin-top: -2px;
 }
 
 .location_image{
     flex: 1;
     height: 160px;
-    /*width: 120px;*/
-    /*padding: 15px 12px 12px 12px;*/
 }
 .location{
     margin-top: -2px;
-    /*width: 50px;*/
     font-size: 12px;
 }
 
 .link{
-    /*font-family: sans-serif;*/
     font-size: 10px;
     color: gray;
     margin-top: -2px;
     margin-left: 2px;
+    width: 100px;
 }
 .location_name_section{
     display: flex;
     flex-direction: column;
-    margin: 20px 200px;
+    margin-top: 40px;
+    margin-right: 870px;
+    margin-left: -800px;
 }
 .location_name{
     font-weight: bold;
     font-size: 20px;
-    /*margin: 25px px;*/
+    margin-top: 2px;
 }
 .duration{
-    margin: 2px;
-    /*margin-top: 80px;*/
-    /*margin-left: 410px;*/
+    margin-top: 2px;
     font-size: 10px;
     font-weight: bold;
     color: #3a3748;
 }
 .location_info{
     width: 330px;
-    margin: 2px;
+    margin-top: 5px;
+    margin-left: 2px;
     color: #b7b6bc;
     font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+    .navbar_text{
+        margin-top: 10px;
+    }
+    .section{
+        padding: 15px;
+        flex-direction: column;
+    }
+    .location_side{
+        flex-direction: row;
+        /*align-items: center;*/
+        padding: 5px;
+    }
+    .location_name_section{
+        margin-top: 6px;
+        margin-right: 1px;
+        margin-left: 1px;
+        /*align-items: center;*/
+    }
+    .location_info{
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        padding: 10px;
+    }
+    .section{
+        padding: 5px;
+    }
+    .location_side{
+        padding: 10px;
+    }
+    .location_name_section{
+        margin-top: -2px;
+    }
+    .location_info{
+        width: 50%;
+        text-align: center;
+    }
 }
